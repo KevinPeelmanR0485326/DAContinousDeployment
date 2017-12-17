@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.springframework</groupId>
-	<artifactId>Assignment2.2Review</artifactId>
+	<artifactId>Assignment2.3Review</artifactId>
 	<version>0.1.0</version>
 
 	<parent>

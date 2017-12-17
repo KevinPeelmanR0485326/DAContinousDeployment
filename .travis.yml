@@ -1,0 +1,14 @@
+before_install:
+  - chmod +x mvnw
+language: java 
+cache:
+- $HOME/.m2
+sudo: required
+jdk:
+- oraclejdk8
+services:
+- docker
+script:
+- docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+- mvn clean package docker:build
+- docker push kevinpeelman/dacontinuousdeployment:latest
